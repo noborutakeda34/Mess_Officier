@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <header>
-                    <h1>Profil de <?php echo $item['Nom'] . ' ++ ' . $item['Prénom'] . ' (' . $item['Login'] . '), ' . $item['Grade'] ; ?></h1>
+                    <h1>Profil de <?php echo $item['Nom'] . ' ' . $item['Prénom'] . ' (' . $item['Login'] . '), ' . $item['Grade'] ; ?></h1>
                     <?php if( $login->getPower()==1 || $login->getPower()==10 ) :?>
                         <div class="liste_choix">| <a href="?c=user" title="">Revenir à la liste</a> | <a href="?c=user&a=update&id= <?php echo $item['ID'] ;?>" title=""> Modifier le profil</a> | <a href="?c=user&a=confirmdelete&id=<?php echo $item['ID'] ;?>" title=""> Supprimer le membre</a> |</div>
                     <?php endif; ?>   
